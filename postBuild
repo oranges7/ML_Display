@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+jupyter nbextension enable --py widgetsnbextension --sys-prefix 2>/dev/null || true
+jupyter trust notebooks/ml_tutorial.ipynb 2>/dev/null || true
